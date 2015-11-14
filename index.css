@@ -1,0 +1,88 @@
+.tabs {
+    opacity: 0;  /* Прозрачность - 0 */
+    visibility: hidden; /* Изначально - спрятан - hidden*/
+}
+
+.tab{
+    position:absolute; /* Абсолютное позиционирование */
+    left:430px;
+    top:150px;
+    visibility: hidden;    /* Изначально - спрятан */
+    z-index: 10;    /* z-index */
+    
+   /*color:#478CFB; /* Цвет */
+   /* font: bold 12pt "Trebuchet MS", tahoma, verdana, arial narrow, arial; /* Толщина, размер и семейство шрифта */
+}
+.tabs:target+.tab {
+    opacity: 1; /* Убирает прозрачность */
+    visibility: visible; /* Делает видимым */
+}
+
+.tabsLink{
+    text-align:center; /*Выравнивание*/
+    padding-top: 30px;
+}
+
+#header {
+height:100px;
+color:#fff;
+padding-top:10px;
+}
+
+#content {
+padding-top:20px;
+background:#CCC;
+}
+
+#footer {
+height: 50px;
+padding-top:10px;
+width: 100%;
+}
+
+#header .in_header {
+width:800px;
+margin:auto;
+}
+#content .in_content {
+width:800px;
+margin:auto;
+}
+#footer .in_footer {
+width:800px;
+margin:auto;
+}
+
+* {
+margin:0; /*Убираем отступы по краям*/
+}
+body {
+height: 100%;
+min-width:900px;
+font-family:Cambria, "Times New Roman", serif;
+}
+html {
+position:relative;
+min-height:100%;
+}
+
+#content {
+padding-top:20px;
+padding-bottom: 430px;
+}
+
+#footer {
+height: 50px;
+padding-top:10px;
+position: absolute;
+bottom: 0;
+width: 100%;
+}
+.forms{
+    height: 370px;
+    width: 430px;
+    border: 1px solid black;
+    background: white;
+    padding-left: 20px;  
+}
+
